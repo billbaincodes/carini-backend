@@ -15,8 +15,8 @@ exports.up = function(knex, Promise) {
     table.integer('venueid')
     table.string('venue')
     table.string('location')
-    table.string('setlistdata')
-    table.string('setlistnotes', 500)
+    table.string('setlistdata', 5000)
+    table.string('setlistnotes', 1000)
     table.string('rating')
   })
 
